@@ -1,0 +1,110 @@
+*{
+    background-color: aliceblue;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: block;
+    margin: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navheader {
+    text-align: center;
+    overflow: auto;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 15%;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right: 4px solid grey;
+}
+
+#navbar ul {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#navbar li{
+    border-top: 2px groove black;    
+    border-top-width: thin;
+    padding: 10px;
+    list-style: none;
+    font-size: 1.1em;
+    text-indent: 10%;
+}
+
+a:not(.reference) {
+    color: #4d4e53;
+    text-decoration: unset;
+    cursor: pointer;
+    padding: 10px 10px;
+    display: block;
+}
+
+#main-doc {
+    position: relative;
+    margin-left: 20%;
+}
+
+#main-doc p{
+    padding-left: 30px;
+    font-size: 1.2em;
+}
+#main-doc ul{
+    padding-left: 6%;
+    font-size: 1.2em;
+}
+#main-doc ul>li:not(:first-child){
+    padding-top: 10px;
+}
+
+#main-doc ul>li>ul>li:not(:first-child){
+    padding-top: 30px;
+    font-size: 0.78em;
+}
+#main-doc ul>li>ul>li:first-child{
+    padding-top: 20px;
+    font-size: 0.78em;
+}
+#main-doc ul>li>ul>li:last-child{
+    padding-bottom: 15px;
+}
+
+code {
+    display: block;
+    position: relative;
+    margin: 10px;
+    background-color: #8c878781;
+    width: 87%;
+    min-width: 10%;
+    height: auto;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+    line-height: 1;
+    left: 5%;
+}
+
+#Hello_world code {
+    line-height: 2 !important;
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        position: fixed;
+        min-width: 15%;
+        width: 15%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-right: 4px solid grey;
+    }
+}
